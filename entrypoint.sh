@@ -3,6 +3,6 @@ set -e
 
 confd -onetime -backend env --log-level debug
 
-cat openvpn-monitor.conf
+cat /etc/openvpn-monitor/openvpn-monitor.conf
 
 exec "$@"
